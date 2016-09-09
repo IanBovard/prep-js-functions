@@ -11,7 +11,8 @@
  *  variable names you will create as they will become input to _other_
  *  functions.
  */
-
+var a = 12
+var b = 15
 
 /**
  *  #2
@@ -20,7 +21,12 @@
  *  This function returns the result of adding `a` and `b` together.
  *  Store this value in a variable named `sum`.
  */
-
+function add(apples, oranges){
+	return apples + oranges;
+}
+add(a, b);
+var sum = add(a,b);
+console.log(sum);
 
 /**
  *  #3
@@ -29,8 +35,12 @@
  *  This function returns the result of subtracting `b` from `a`.
  *  Store this value in a variable named `difference`
  */
-
-
+function subtract(apples, oranges){
+	return oranges - apples;
+}
+subtract(b,a);
+var difference = subtract(b,a);
+console.log(difference);
 /**
  *  #4
  *  Function - multiply
@@ -38,7 +48,9 @@
  *  This function returns the result of multiplying `b` by `a`.
  *  Store this value in a variable named `product`
  */
+function multiply(apples, oranges){
 
+}
 
 /**
  *  #5
