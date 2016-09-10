@@ -113,7 +113,7 @@ console.log(checkProduct(product,difference));
  *      addThenSubtract(4, 5, 7); //-> returns 2 because 4 + 5 - 7 = 2
  */
 function andThenSubtract(un, deux, trois){
-	return un - deux - trois;
+	return subtract(add(un, deux), trois);
 }
 andThenSubtract(product, difference, sum);
 console.log(andThenSubtract(product, difference, sum));
@@ -173,8 +173,8 @@ console.log(myFullName);
 function verifyDrinkingAge(age){
 	return age >= 21;
 }
-verifyDrinkingAge(19);
-var canDrinkBeer = verifyDrinkingAge(19);
+verifyDrinkingAge(40);
+var canDrinkBeer = verifyDrinkingAge(40);
 console.log(canDrinkBeer);
 /**
  *  #12
@@ -186,11 +186,11 @@ console.log(canDrinkBeer);
  *  should be "This Party will have an open bar".
  */
 function throwParty(fiesta){
-	if (fiesta < 21){
+	if (fiesta <= 20){
 		return "The party will have tons of Cake!";
 	}
-	if (fiesta >= 21){
-		return "This party will have an open bar";
+	else{
+		return "This party will have an open bar!";
 	}
 }
 throwParty(canDrinkBeer);
