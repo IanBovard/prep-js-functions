@@ -66,12 +66,11 @@ console.log(product);
  *  "My football team lost X times this week", where `X` is the
  *  value stored in `difference`.
  */
-function checkDifference(wins, ties){
-	return "My football team lost " + (wins - ties) + " times this week :[";
+function checkDifference(losses){
+	return "My football team lost " + losses + " times this week :]";
 }
-checkDifference(b, a);
-var losses = checkDifference(b, a);
-console.log(losses);
+checkDifference(difference);
+console.log(checkDifference(difference));
 
 /**
  *  #6
@@ -82,7 +81,11 @@ console.log(losses);
  *  "I CAN ADDZ X NUMBERS"  where `X` is the value
  *  stored in the variable `sum`.
  */
-
+ function checkSum(mathSkillz){
+ 	return "I CAN ADDZ " + mathSkillz + " NUMBERS!";
+ }
+ checkSum(sum);
+ console.log(checkSum(sum));
 /**
  *  #7
  *  Function - checkProduct
@@ -91,8 +94,11 @@ console.log(losses);
  *  multiplies it by the number stored at `difference` and
  *  then prints the result to the console.
  */
-
-
+function checkProduct(num1, num2){
+	return num1 * num2;
+}
+checkProduct(product, difference);
+console.log(checkProduct(product,difference));
 /**
  *  #8
  *  Function - addThenSubtract
