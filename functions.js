@@ -186,7 +186,7 @@ console.log(canDrinkBeer);
  *  should be "This Party will have an open bar".
  */
 function throwParty(fiesta){
-	if (fiesta <= 20){
+	if (fiesta === false){
 		return "The party will have tons of Cake!";
 	}
 	else{
