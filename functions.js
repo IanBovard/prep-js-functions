@@ -66,7 +66,12 @@ console.log(product);
  *  "My football team lost X times this week", where `X` is the
  *  value stored in `difference`.
  */
-
+function checkDifference(wins, ties){
+	return "My football team lost " + (wins - ties) + " times this week :[";
+}
+checkDifference(b, a);
+var losses = checkDifference(b, a);
+console.log(losses);
 
 /**
  *  #6
@@ -77,7 +82,6 @@ console.log(product);
  *  "I CAN ADDZ X NUMBERS"  where `X` is the value
  *  stored in the variable `sum`.
  */
-
 
 /**
  *  #7
