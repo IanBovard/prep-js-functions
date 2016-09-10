@@ -132,8 +132,8 @@ console.log(andThenSubtract(product, difference, sum));
 function addThenMultiply(ichi, ni, san){
 	return (ichi + ni) * san;
 }
-addThenMultiply(6, 5, 3);
-var howMany = addThenMultiply(6, 5, 3);
+addThenMultiply(difference, sum, product);
+var howMany = addThenMultiply(difference, sum, product);
 console.log(howMany);
 /**
  *  #10
@@ -170,8 +170,12 @@ console.log(myFullName);
  *  **Call this function and pass in a number value.
  *  Store the return value to a variable named** `canDrinkBeer`
  */
-
-
+function verifyDrinkingAge(age){
+	return age >= 21;
+}
+verifyDrinkingAge(19);
+var canDrinkBeer = verifyDrinkingAge(19);
+console.log(canDrinkBeer);
 /**
  *  #12
  *  Function - throwParty
@@ -181,8 +185,16 @@ console.log(myFullName);
  *  "The Party will have tons of Cake!" otherwise this message
  *  should be "This Party will have an open bar".
  */
-
-
+function throwParty(fiesta){
+	if (fiesta < 21){
+		return "The party will have tons of Cake!";
+	}
+	if (fiesta >= 21){
+		return "This party will have an open bar";
+	}
+}
+throwParty(canDrinkBeer);
+console.log(throwParty(canDrinkBeer));
 /**
  *  #13
  *  Function - eatFood
@@ -202,7 +214,14 @@ console.log(myFullName);
   *  **example output:**
  *      "Peter Bojanglesloves loves to eat California Burritos"
  */
-
+function eatFood(firstName, lastName, food){
+	function createFullName(firstName, lastName){
+	return firstName + " " + lastName;
+}
+	return createFullName(firstName, lastName) + " loves to eat" + " " + food + "!";
+}
+eatFood("Sonic", "the Hedgehog", "chili dogs");
+console.log(eatFood("Sonic", "the Hedgehog", "chili dogs"));
 
 /**
  *  #14
@@ -215,4 +234,3 @@ console.log(myFullName);
  *  the message will be `"Bacon Pancakes, makin' Bacon Pancakes..."`
  *  othewise the message will be `"Let it go.... LET IT GOOOOOOoOoOoOo..."`
  */
-
