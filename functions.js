@@ -38,8 +38,8 @@ console.log(sum);
 function subtract(apples, oranges){
 	return oranges - apples;
 }
-subtract(b,a);
-var difference = subtract(b,a);
+subtract(a,b);
+var difference = subtract(a,b);
 console.log(difference);
 /**
  *  #4
@@ -53,8 +53,8 @@ function multiply(apples, oranges){
 
 
 }
-multiply(b,a);
-var product = multiply(b,a);
+multiply(a,b);
+var product = multiply(a,b);
 console.log(product);
 
 /**
@@ -67,7 +67,7 @@ console.log(product);
  *  value stored in `difference`.
  */
 function checkDifference(losses){
-	return "My football team lost " + losses + " times this week :]";
+	return "My football team lost " + losses + " times this week :[";
 }
 checkDifference(difference);
 console.log(checkDifference(difference));
