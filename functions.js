@@ -130,7 +130,7 @@ console.log(andThenSubtract(product, difference, sum));
  *  Store the return of this function to a variable named `howMany`
  */
 function addThenMultiply(ichi, ni, san){
-	return (ichi + ni) * san;
+	return multiply(add(ichi, ni),san);
 }
 addThenMultiply(difference, sum, product);
 var howMany = addThenMultiply(difference, sum, product);
