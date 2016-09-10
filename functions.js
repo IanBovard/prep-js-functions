@@ -49,8 +49,13 @@ console.log(difference);
  *  Store this value in a variable named `product`
  */
 function multiply(apples, oranges){
+	return apples * oranges;
+
 
 }
+multiply(b,a);
+var product = multiply(b,a);
+console.log(product);
 
 /**
  *  #5
