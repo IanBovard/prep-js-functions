@@ -171,10 +171,14 @@ console.log(myFullName);
  *  Store the return value to a variable named** `canDrinkBeer`
  */
 function verifyDrinkingAge(age){
-	return age >= 21;
+	if (age >= 21){
+		return true;
+	}else{
+		return false;
+	}
 }
-verifyDrinkingAge(40);
-var canDrinkBeer = verifyDrinkingAge(40);
+verifyDrinkingAge(30);
+var canDrinkBeer = verifyDrinkingAge(30);
 console.log(canDrinkBeer);
 /**
  *  #12
@@ -234,3 +238,27 @@ console.log(eatFood("Sonic", "the Hedgehog", "chili dogs"));
  *  the message will be `"Bacon Pancakes, makin' Bacon Pancakes..."`
  *  othewise the message will be `"Let it go.... LET IT GOOOOOOoOoOoOo..."`
  */
+
+
+
+/*	for (var i=0; i<message; i++){
+		if (age === true){
+			console.log("Bacon Pancakes, makin' Bacon Pancakes");
+		}else{
+			console.log("Let it go...Let it GOOOOOOoOoOoOo");
+		}
+	}
+}
+repeater(10, canDrinkBeer);*/
+
+function repeater(){
+	var message;
+	if(canDrinkBeer === true){
+		message = "Bacon Pancakes";
+	}else{
+		message = "Let is Go!";
+	}
+	for (var i=0; i<10; i++)
+		console.log(message);
+}
+repeater();
